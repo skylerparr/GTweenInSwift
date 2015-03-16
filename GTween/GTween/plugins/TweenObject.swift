@@ -254,6 +254,8 @@ class TweenObject:NSObject {
             var newFrame = target.frame
             newFrame.origin.x = CGFloat(newX)
             newFrame.origin.y = CGFloat(newY)
+            newFrame.size.width = CGFloat(newW)
+            newFrame.size.height = CGFloat(newH)
             
             var newCenter = target.center
             newCenter.x = CGFloat(newX)
