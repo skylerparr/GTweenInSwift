@@ -56,7 +56,7 @@ class TweenConstraint:NSObject {
     var runOnStart:(()->())?
     
     init(viewController:UIViewController, _target:AnyObject, time:Float, params:[String: Any], events:[String: ()->Void] = Dictionary()){
-        target = _target as NSLayoutConstraint
+        target = _target as! NSLayoutConstraint
         curViewController = viewController
         _time = time
         

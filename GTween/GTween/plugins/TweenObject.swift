@@ -270,7 +270,7 @@ class TweenObject:NSObject {
             }*/
             
             if((target as? UIView) != nil){
-                var newTarget = (target as UIView)
+                var newTarget = (target as! UIView)
                 //print("uiview")
                 if(toScaleX != nil || toScaleY != nil || toRotation != nil) {
                     newTarget.transform = newTransform
@@ -287,7 +287,7 @@ class TweenObject:NSObject {
                     newTarget.frame = newFrame
                 }
             } else if((target as? UILabel) != nil){
-                var newTarget = (target as UILabel)
+                var newTarget = (target as! UILabel)
                 
                 if(toScaleX != nil || toScaleY != nil || toRotation != nil) {
                     newTarget.transform = newTransform
@@ -299,7 +299,7 @@ class TweenObject:NSObject {
                     newTarget.frame = newFrame
                 }
             } else if((target as? UIImageView) != nil){
-                var newTarget = (target as UIImageView)
+                var newTarget = (target as! UIImageView)
                 
                 if(toScaleX != nil || toScaleY != nil || toRotation != nil) {
                     newTarget.transform = newTransform
@@ -311,7 +311,7 @@ class TweenObject:NSObject {
                     newTarget.frame = newFrame
                 }
             } else if((target as? UIButton) != nil){
-                var newTarget = (target as UIButton)
+                var newTarget = (target as! UIButton)
                 println("uibutton")
                 if(toScaleX != nil || toScaleY != nil || toRotation != nil) {
                     newTarget.transform = newTransform
@@ -324,7 +324,7 @@ class TweenObject:NSObject {
                     newTarget.frame = newFrame
                 }
             } else if((target as? UICollectionView) != nil){
-                var newTarget = (target as UICollectionView)
+                var newTarget = (target as! UICollectionView)
                 
                 if(toScaleX != nil || toScaleY != nil || toRotation != nil) {
                     newTarget.transform = newTransform
@@ -336,7 +336,7 @@ class TweenObject:NSObject {
                     newTarget.frame = newFrame
                 }
             } else if((target as? UITextView) != nil){
-                var newTarget = (target as UITextView)
+                var newTarget = (target as! UITextView)
                 
                 if(toScaleX != nil || toScaleY != nil || toRotation != nil) {
                     newTarget.transform = newTransform
@@ -348,7 +348,7 @@ class TweenObject:NSObject {
                     newTarget.frame = newFrame
                 }
             } else if((target as? UIScrollView) != nil){
-                var newTarget = (target as UIScrollView)
+                var newTarget = (target as! UIScrollView)
                 
                 if(toScaleX != nil || toScaleY != nil || toRotation != nil) {
                     newTarget.transform = newTransform
@@ -360,21 +360,21 @@ class TweenObject:NSObject {
                     newTarget.frame = newFrame
                 }
             } else if((target as? UIPickerView) != nil){
-                (target as UIPickerView).frame = newFrame
+                (target as! UIPickerView).frame = newFrame
             } else if((target as? UIWebView) != nil){
-                (target as UIWebView).frame = newFrame
+                (target as! UIWebView).frame = newFrame
             } else if((target as? UIToolbar) != nil){
-                (target as UIToolbar).frame = newFrame
+                (target as! UIToolbar).frame = newFrame
             } else if((target as? UISwitch) != nil){
-                (target as UISwitch).frame = newFrame
+                (target as! UISwitch).frame = newFrame
             } else if((target as? UIActivityIndicatorView) != nil){
-                (target as UIActivityIndicatorView).frame = newFrame
+                (target as! UIActivityIndicatorView).frame = newFrame
             } else if((target as? UIProgressView) != nil){
-                (target as UIProgressView).frame = newFrame
+                (target as! UIProgressView).frame = newFrame
             } else if((target as? UIPageControl) != nil){
-                (target as UIPageControl).frame = newFrame
+                (target as! UIPageControl).frame = newFrame
             } else if((target as? UIStepper) != nil){
-                (target as UIStepper).frame = newFrame
+                (target as! UIStepper).frame = newFrame
             }
             
             if toAlpha != nil {

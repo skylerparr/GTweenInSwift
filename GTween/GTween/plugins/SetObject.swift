@@ -137,7 +137,7 @@ class SetObject: NSObject {
         var newTransform = CGAffineTransformConcat(scaleTransform, rotateTransform)
         
         if((target as? UIView) != nil){
-            var newTarget = (target as UIView)
+            var newTarget = (target as! UIView)
             newTarget.transform = newTransform
             
             setFrame = newTarget.frame
@@ -166,7 +166,7 @@ class SetObject: NSObject {
             
             newTarget.frame = setFrame
         } else if((target as? UILabel) != nil){
-            var newTarget = (target as UIView)
+            var newTarget = (target as! UIView)
             newTarget.transform = newTransform
             
             setFrame = newTarget.frame
@@ -195,7 +195,7 @@ class SetObject: NSObject {
             
             newTarget.frame = setFrame
         } else if((target as? UIImageView) != nil){
-            var newTarget = (target as UIView)
+            var newTarget = (target as! UIView)
             newTarget.transform = newTransform
             
             setFrame = newTarget.frame
@@ -224,7 +224,7 @@ class SetObject: NSObject {
             
             newTarget.frame = setFrame
         } else if((target as? UIImageView) != nil){
-            var newTarget = (target as UIView)
+            var newTarget = (target as! UIView)
             newTarget.transform = newTransform
             
             setFrame = newTarget.frame
@@ -253,7 +253,7 @@ class SetObject: NSObject {
             
             newTarget.frame = setFrame
         } else if((target as? UIButton) != nil){
-            var newTarget = (target as UIView)
+            var newTarget = (target as! UIView)
             newTarget.transform = newTransform
             
             setFrame = newTarget.frame
@@ -282,7 +282,7 @@ class SetObject: NSObject {
             
             newTarget.frame = setFrame
         } else if((target as? UITextView) != nil){
-            var newTarget = (target as UIView)
+            var newTarget = (target as! UIView)
             newTarget.transform = newTransform
             
             setFrame = newTarget.frame
@@ -311,7 +311,7 @@ class SetObject: NSObject {
             
             newTarget.frame = setFrame
         } else if((target as? UIScrollView) != nil){
-            var newTarget = (target as UIView)
+            var newTarget = (target as! UIView)
             newTarget.transform = newTransform
             
             setFrame = newTarget.frame
